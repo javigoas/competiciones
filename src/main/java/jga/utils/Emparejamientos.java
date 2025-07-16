@@ -76,8 +76,8 @@ public class Emparejamientos {
 
         // Probando con N=6
         try {
-            List<List<AbstractMap.SimpleEntry<Integer, Integer>>> emparejamientos6 = generarEmparejamientos(6);
-            System.out.println("Emparejamientos para N=6:");
+            List<List<AbstractMap.SimpleEntry<Integer, Integer>>> emparejamientos6 = generarEmparejamientos(10);
+            System.out.println("Emparejamientos para N=10:");
             for (List<AbstractMap.SimpleEntry<Integer, Integer>> ronda : emparejamientos6) {
                 System.out.println(ronda);
             }

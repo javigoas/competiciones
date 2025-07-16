@@ -1,0 +1,30 @@
+springdoc:
+  api-doc:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    disable-swagger-default-url: true
+    display-request-duration: true
+    doc-expansion: none
+    filter: true
+    operations-sorter: alpha
+    tags-sorter: alpha
+
+spring:
+  datasource:
+    url: jdbc:h2:file:./data/myh2db
+    driverClassName: org.h2.Driver
+    username: admin
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: none
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  sql:
+    init:
+      mode: always
